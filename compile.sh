@@ -1,1 +1,1 @@
-clear && g++ pejlab_watchdog.cpp -lstdc++fs -fopenmp -pthread -std=c++17 -o pejlab_watchdog 
+clear && g++ slack_watchdog.cpp -lstdc++fs -fopenmp -std=c++17 -o slack_watchdog && g++ -std=c++17 tests.cpp -o tests

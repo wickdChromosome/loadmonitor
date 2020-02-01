@@ -10,6 +10,8 @@ If any of your sshfs mounted directories becomes inaccessible
 gcc
 c++17
 curl
+openmp
+cmake
 
 ## Installing
 Run the install.sh script with sudo access. This will:

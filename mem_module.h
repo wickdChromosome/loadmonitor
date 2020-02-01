@@ -24,10 +24,10 @@ str.erase(end_pos, str.end());
 */
 
 
-float percent_available_mem() {
+float percent_available_mem(string memfile_name="/proc/meminfo") {
 
 	//read in mem file
-	ifstream memfile("/proc/meminfo");
+	ifstream memfile(memfile_name);
 	string line;
 	string delim = ":";
 
@@ -101,7 +101,7 @@ void monitorloop_mem() {
 		if (percentmem < 0.3) {
 
 			//if slack wasn't notified yet	
-			if (~already_notified_warning) {
+			if (!already_notified_warning) {
 	
 				bool isAlert = false;
 				string message = "*WARNING:* Over 70% of ram currently in use";
@@ -128,7 +128,7 @@ void monitorloop_mem() {
 			string message = "*ALERT:* Over 85% of ram currently in use";
 
 			//if slack wasn't notified yet	
-			if (~already_notified_alert) {
+			if (!already_notified_alert) {
 			
 				send_msg(message, isAlert);
 				already_notified_alert = true;

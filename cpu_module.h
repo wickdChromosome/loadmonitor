@@ -26,10 +26,10 @@ void split2(const std::string& str, Container& cont, char delim = ' ')
 }
 
 
-float cpu_loadavg() {
+float cpu_loadavg(string cpufile_name="/proc/loadavg") {
 
 	//read in cpu file
-	ifstream cpufile("/proc/loadavg");
+	ifstream cpufile(cpufile_name);
 	string line;
 
 	float secondavg;
@@ -68,7 +68,7 @@ void monitorloop_cpu() {
 		// if loadavg per virtual thread more than 0.9, send alert
 		if (loadavg / concurrentThreadsSupported > 0.9) {
 
-			if (~already_sent_alert) {
+			if (!already_sent_alert) {
 		
 				bool isAlert = true;
 				string message = "*ALERT:* Cpu under heavy load";
