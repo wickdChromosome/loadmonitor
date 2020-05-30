@@ -1,4 +1,3 @@
-/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/edit_cache.dir
 /home/bkotis/Documents/slack_watchdog/build/CMakeFiles/rebuild_cache.dir
-/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/slack_watchdog.dir
-/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/tests.dir
+/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/slack_monitor.dir
+/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/edit_cache.dir

@@ -1,20 +1,20 @@
 Determining if the pthread_create exist failed with the following output:
 Change Dir: /home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_89a2e/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_89a2e.dir/build.make CMakeFiles/cmTC_89a2e.dir/build
-gmake[1]: Entering directory '/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_89a2e.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_89a2e.dir/CheckSymbolExists.c.o   -c /home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_89a2e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89a2e.dir/link.txt --verbose=1
-/usr/bin/cc      CMakeFiles/cmTC_89a2e.dir/CheckSymbolExists.c.o  -o cmTC_89a2e 
-/usr/bin/ld: CMakeFiles/cmTC_89a2e.dir/CheckSymbolExists.c.o: in function `main':
-CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+Run Build Command:"/usr/bin/make" "cmTC_3d93d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_3d93d.dir/build.make CMakeFiles/cmTC_3d93d.dir/build
+make[1]: Entering directory '/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3d93d.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_3d93d.dir/CheckSymbolExists.c.o   -c /home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_3d93d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d93d.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_3d93d.dir/CheckSymbolExists.c.o  -o cmTC_3d93d 
+/usr/bin/ld: CMakeFiles/cmTC_3d93d.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text+0x1f): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_89a2e.dir/build.make:87: cmTC_89a2e] Error 1
-gmake[1]: Leaving directory '/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:121: cmTC_89a2e/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_3d93d.dir/build.make:87: cmTC_3d93d] Error 1
+make[1]: Leaving directory '/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_3d93d/fast] Error 2
 
 File /home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
@@ -34,18 +34,18 @@ int main(int argc, char** argv)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake cmTC_f50cf/fast 
-/usr/bin/gmake -f CMakeFiles/cmTC_f50cf.dir/build.make CMakeFiles/cmTC_f50cf.dir/build
-gmake[1]: Entering directory '/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f50cf.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f50cf.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
-Linking C executable cmTC_f50cf
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f50cf.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f50cf.dir/CheckFunctionExists.c.o  -o cmTC_f50cf -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_6e3f0/fast"
+/usr/bin/make -f CMakeFiles/cmTC_6e3f0.dir/build.make CMakeFiles/cmTC_6e3f0.dir/build
+make[1]: Entering directory '/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6e3f0.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_6e3f0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.13/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6e3f0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e3f0.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_6e3f0.dir/CheckFunctionExists.c.o  -o cmTC_6e3f0 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_f50cf.dir/build.make:87: cmTC_f50cf] Error 1
-gmake[1]: Leaving directory '/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp'
-gmake: *** [Makefile:121: cmTC_f50cf/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_6e3f0.dir/build.make:87: cmTC_6e3f0] Error 1
+make[1]: Leaving directory '/home/bkotis/Documents/slack_watchdog/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6e3f0/fast] Error 2
 
 

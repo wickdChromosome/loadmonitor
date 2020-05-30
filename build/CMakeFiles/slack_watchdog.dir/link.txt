@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/slack_watchdog.dir/slack_watchdog.cpp.o  -o slack_watchdog -lpthread 
