@@ -9,7 +9,7 @@ using namespace std;
 string get_API_URL() {
 
 	//Read the API form the config path
-	string config_path = "/etc/pejlab_watchdog/API_URL.txt";
+	string config_path = "/etc/slack_monitor/API_URL.txt";
 	string line;
 	ifstream apifile(config_path);	
 
