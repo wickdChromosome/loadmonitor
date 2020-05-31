@@ -19,8 +19,8 @@ clear
 mkdir build/
 cp src/CMakeLists.txt build/
 cd build/
-cmake CMakeLists.txt 
-make
+g++ ../src/server_monitor.cpp -Wall -fopenmp -lstdc++fs -pthread -o slack_monitor 
+echo "Done compiling project"
 
 #ask user for the slack webhook url
 echo "Please generate and paste your Slack webhook url here - a hello world message will be sent out."
@@ -38,14 +38,16 @@ if [ "$notif_ans" == "n" ]; then
 
 fi
 
-
 #if the token works, put it into a file for the script to read
 mkdir /etc/slack_monitor
 echo $webhook_url > /etc/slack_monitor/API_URL.txt 
 echo "Saved webhook url"
 
+#now copy the actual executable where systemd can find it
+cp slack_monitor /etc/slack_monitor/slack_monitor
+
 #now copy the systemctl file to the correct place
-cp systemd/slack_monitor.service /etc/systemd/system/
+cp ../systemd/slack_monitor.service /etc/systemd/system/
 echo "Added app as a systemd service"
 
 echo "The installation is finished. Try starting the app with sudo systemctl start slack_monitor. You can enable the app on startup by doing sudo systemctl enable slack_monitor."

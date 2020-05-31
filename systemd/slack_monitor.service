@@ -1,5 +1,5 @@
 [Unit]
-Description=slack monitor
+Description=A server monitor using Slack notifications
 After=network.target
 StartLimitIntervalSec=0
 [Service]
