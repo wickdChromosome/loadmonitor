@@ -9,9 +9,9 @@ Alert if CPU loadavg/num_cpus > 1 (loadavg also takes into account swap usage, e
 
 ## Dependencies
 
--gcc
--curl
--openmp
+- gcc
+- curl
+- openmp
 
 
 ## Installation
