@@ -17,7 +17,6 @@ fi
 #compile project
 clear
 mkdir build/
-cp src/CMakeLists.txt build/
 cd build/
 g++ ../src/server_monitor.cpp -Wall -fopenmp -lstdc++fs -pthread -o slack_monitor 
 echo "Done compiling project"
@@ -44,7 +43,6 @@ echo $webhook_url > /etc/slack_monitor/API_URL.txt
 echo "Saved webhook url"
 
 #now copy the actual executable where systemd can find it
-cp slack_monitor /etc/slack_monitor/slack_monitor
 
 #now copy the systemctl file to the correct place
 cp ../systemd/slack_monitor.service /etc/systemd/system/

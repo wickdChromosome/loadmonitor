@@ -11,8 +11,6 @@ Alert if CPU loadavg/num_cpus > 1 (loadavg also takes into account swap usage, e
 
 - gcc
 - curl
-- openmp
-
 
 ## Installation
 To install the app, first create a new Slack app, and enable incoming webhooks for your target channel.

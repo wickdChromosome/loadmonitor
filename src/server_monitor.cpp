@@ -14,15 +14,10 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
 
-	cout << "initializing openMP threads.." << endl;
-	//lets fire up some openMP threads
-	#pragma omp parallel for
-	for (int i = 0; i < 2 ; i++) {
 
-		if (i == 0) monitorloop_mem();	
-		if (i == 1) monitorloop_cpu();	
-
-	}
+	// Lets create a separate process the memory and cpu loops
+	if (fork() == 0) monitorloop_mem();	
+	else monitorloop_cpu();	
 		
 	return 0;
 
