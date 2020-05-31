@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <unistd.h>
 
 //slack webhook messaging
 #include "messaging.h"
@@ -10,7 +11,6 @@
 #include "cpu_module.h"
 
 using namespace std;
-namespace fs = filesystem;
 
 int main(int argc, char* argv[]) {
 
