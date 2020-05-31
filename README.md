@@ -1,9 +1,11 @@
 # Slack server alerts
 Monitor your server using Slack - either a VM or a physical server, this app will notify you on slack if:
 
-Ram usage exceeded 75%
-Ram usage exceeded 85%
-CPU loadavg/num_cpus > 1 (loadavg also takes into account swap usage, etc)
+```
+Warning if Ram usage exceeded 75%
+Alert if Ram usage exceeded 85%
+Alert if CPU loadavg/num_cpus > 1 (loadavg also takes into account swap usage, etc)
+```
 
 ## Dependencies
 ```
