@@ -1,26 +1,19 @@
+sudo: false
+language: cpp
+compiler:
+  - gcc
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - g++-6
+    - curl
+install:
+- "[ $CXX = g++ ] && export CXX=g++-6 || true"
 
-language: c++
-
-
-matrix:
-  include:
-      - os: linux
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-          packages:
-            - g++-7
-            - libcurl4-gnutls-dev 
-      env:
-        - MATRIX_EVAL="CC=gcc-7 && CXX=g++-7"
-
-before_install:
-    - eval "${MATRIX_EVAL}"
-
-
-# now build the project
 script: 
-  - cd test/
-  - g++ tests.cpp && ./tests
+- cd test/
+- g++ -std=c++17 tests.cpp && ./tests
+
 
