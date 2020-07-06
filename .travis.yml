@@ -1,3 +1,7 @@
+
+language: c++
+
+
 matrix:
   include:
       - os: linux
@@ -17,6 +21,6 @@ before_install:
 
 # now build the project
 script: 
-  - cd ${TRAVIS_BUILD_DIR}
-  - make && ./test-library.out
+  - cd test/
+  - g++ tests.cpp && ./tests
 
