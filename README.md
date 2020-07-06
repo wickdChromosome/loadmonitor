@@ -5,7 +5,7 @@
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-<div align="center"; style="width:100%;"><img src="demo.png" /></div>
+<div align="center"; style="width:100%;padding-bottom:20px;"><img src="demo.png" /></div>
 
 
 
