@@ -1,4 +1,15 @@
-# Slack server alerts
+# loadmonitor
+
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
+[![GitHub Issues](https://img.shields.io/github/issues/wickdchromosome/loadmonitor.svg)](https://github.com/wickdchromosome/loadmonitor/issues)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+<div style="text-align:center;width:100%;"><img style="padding-left:10%;" src="demo.png" /></div>
+
+
+
+
 Keep an eye your Linux box using Slack - you will get notified with a(n):
 
 - Warning if Ram usage exceeded 75%
