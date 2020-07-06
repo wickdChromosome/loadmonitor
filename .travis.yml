@@ -13,3 +13,10 @@ matrix:
 
 before_install:
     - eval "${MATRIX_EVAL}"
+
+
+# now build the project
+script: 
+  - cd ${TRAVIS_BUILD_DIR}
+  - make && ./test-library.out
+
