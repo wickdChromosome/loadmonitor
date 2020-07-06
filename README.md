@@ -1,5 +1,5 @@
 # loadmonitor
-
+![Unit tests](https://travis-ci.com/wickdChromosome/loadmonitor.svg?branch=master)
 ![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
 [![GitHub Issues](https://img.shields.io/github/issues/wickdchromosome/loadmonitor.svg)](https://github.com/wickdchromosome/loadmonitor/issues)
 ![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
