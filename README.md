@@ -29,7 +29,7 @@ Then run:
 sudo bash setup.sh
 ```
 
-This will compile the project and add it as a systemd service. You will also get a prompt to test
+This will compile the project using gcc (tested using gcc version 9.2.1) and add the project as a systemd service. You will also get a prompt to test
 your webhook with a "Hello World!" message.
 
 ## Usage
